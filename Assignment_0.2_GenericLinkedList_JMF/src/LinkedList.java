@@ -1,7 +1,10 @@
-package linkedlist;
+
 /**
+ * Linked list is a class that allows for you to be able to make a list with what you need
+ * using generics.
 * @author James Frayser
 * LinkedList.java
+* @version 9/22/2002
 */
 public class LinkedList<T> {
        
@@ -24,7 +27,7 @@ public class LinkedList<T> {
        
        /**
        * isEmpty asks if the list is empty
-       * @return
+       * @return a boolean, false if it is not empty, true if it is
        */
        public boolean isEmpty()
        {
@@ -33,7 +36,7 @@ public class LinkedList<T> {
        }
        /**
        * getter
-       * @return
+       * @return head
        */
        public Node getList()
        {
@@ -42,7 +45,7 @@ public class LinkedList<T> {
        
        /**
        * adds a node to the list
-       * @param aNode
+       * @param aNode: the node being added to
        */
        public void addNode(Node aNode)
        {
@@ -83,6 +86,6 @@ public class LinkedList<T> {
               
               
  
-       }
+       }//end main
 
-}
+}//end class

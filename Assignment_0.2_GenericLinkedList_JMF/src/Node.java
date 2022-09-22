@@ -1,8 +1,11 @@
-package linkedlist;
+
  
 /**
+ * Node uses the Linked list to call and look at what nodes there are present
+ * using generics.
 * @author James Frayser
 * Node.java
+* @version 9/22/2002
 */
 class Node<T> {
        /**
@@ -45,7 +48,7 @@ class Node<T> {
        }
        
        
-}
+}//end class
  
  
 

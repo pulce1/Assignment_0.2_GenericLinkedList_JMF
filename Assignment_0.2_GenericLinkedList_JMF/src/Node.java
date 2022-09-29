@@ -12,8 +12,7 @@ class Node<T> {
        * methods
        */
        T data;
-       @SuppressWarnings("rawtypes")
-       Node nextNode;
+       Node<T> nextNode;
        
        /**
        * empty argument constructor
@@ -32,8 +31,7 @@ class Node<T> {
               this.data=data;
        }
        
-       @SuppressWarnings("rawtypes")
-       public Node getNode() {
+       public Node<T> getNode() {
               return this;
        }
        
@@ -41,11 +39,12 @@ class Node<T> {
        * setNextNode calls to set the new node
        * @param nextNode
        */
-       @SuppressWarnings("rawtypes")
-       public void setNextNode(Node nextNode)
+
+       public void setNextNode(Node<T> nextNode)
        {
               this.nextNode=nextNode;
        }
+       
        
        
 }//end class

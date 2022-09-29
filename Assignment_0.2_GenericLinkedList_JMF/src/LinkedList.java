@@ -11,9 +11,9 @@ public class LinkedList<T> {
        /**
        * methods
        */
-       Node head;
+       Node<T> head;
        int length;
-       Node tail;
+       Node<T> tail;
        
        /**
        * empty argument constructor
@@ -38,7 +38,7 @@ public class LinkedList<T> {
        * getter
        * @return head
        */
-       public Node getList()
+       public Node<T> getList()
        {
               return head;
        }
@@ -47,14 +47,14 @@ public class LinkedList<T> {
        * adds a node to the list
        * @param aNode: the node being added to
        */
-       public void addNode(Node aNode)
+       public void addNode(Node<T> aNode)
        {
               if (isEmpty() ) {
                      head = aNode;
                      tail=head;
                      return;
               }
-              tail.nextNode=aNode;
+              tail.nextNode = aNode;
               tail=tail.nextNode;
               tail.nextNode=null;
               length++;
@@ -67,16 +67,16 @@ public class LinkedList<T> {
        */
        public static void main(String[] args) {
               // TODO Auto-generated method stub
-              LinkedList myList=new LinkedList();
+              LinkedList<String> myList=new LinkedList<String>();
               
-              Node aNode=new Node();
-              aNode.setData("Jack");
+              Node<String> aNode=new Node<String>();
+              aNode.setData("Jackson");
               myList.addNode(aNode);
-              aNode = new Node();
-              aNode.setData(2);
+              aNode = new Node<String>();
+              aNode.setData("Phil");
               myList.addNode(aNode);
-              
-              Node tempnode=myList.getList();
+
+              Node<String> tempnode=myList.getList();
               do 
               {
                      System.out.println(tempnode.data);
